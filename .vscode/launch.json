@@ -1,0 +1,53 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (GRPC)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/Server.Communication.GRPC/bin/Debug/net8.0/Server.Communication.GRPC.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Server.Communication.GRPC",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "launchSettingsProfile": "http"
+        },
+        {
+            "name": ".NET Core Launch (Events)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/Server.Communication.Events/bin/Debug/net8.0/Server.Communication.Events.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Server.Communication.Events",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "launchSettingsProfile": "http"
+        },
+        {
+            "name": ".NET Core Launch (Socket)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/Server.Communication.Socket/bin/Debug/net8.0/Server.Communication.Socket.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Server.Communication.Socket",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "launchSettingsProfile": "http"
+        }
+    ]
+}
